@@ -17,3 +17,4 @@ command = result1 + result2
 while True:
     msg = bytes(str(command), "utf8")
     client_socket.sendto(msg,controlCenterAddr)
+    #dasda大大
