@@ -12,9 +12,10 @@ result1 = char[command1]
 result2 = char[command2]
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 controlCenterAddr = ('127.0.0.1', 8847)   
-
+command3 = 1
 command = result1 + result2
 while True:
     msg = bytes(str(command), "utf8")
     client_socket.sendto(msg,controlCenterAddr)
     #dasda大大
+    
